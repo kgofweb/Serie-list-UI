@@ -1,0 +1,48 @@
+.form {
+  @include flex-colum;
+  margin-top: 3rem;
+
+  &-group {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      color: var(--primary-color);
+    }
+  }
+
+  &-control {
+    padding: .7rem 1rem;
+    width: 150%;
+    border: .5px solid var(--third-color);
+    background: none;
+    outline: none;
+    border-radius: .2rem;
+
+    &:focus {
+      border: 3px solid var(--secondary-transparent-color);
+    }
+  }
+
+  // Submit btn
+  .submit-btn {
+    padding: var(--small-font) var(--serie-font);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: var(--secondary-transparent-color);
+    transition: .3s ease-in-out;
+    margin-top: 1.3rem;
+
+    p {
+      color: var(--secondary-color);
+      font-size: var(--serie-font);
+      font-weight: 600;
+    }
+
+    &:hover {
+      transform: translateY(-6%);
+      box-shadow: 1px 1px 4px var(--secondary-transparent-color);
+    }
+  }
+}

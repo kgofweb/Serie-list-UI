@@ -1,0 +1,21 @@
+.nav {
+  &-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-list {
+    margin: var(--small-font) var(--serie-font);
+
+    a {
+      color: var(--primary-color);
+      font-size: var(--serie-font);
+      font-weight: 600;
+      transition: .3s ease-in-out;
+    }
+  }
+
+  .active {
+    color: var(--secondary-color) !important;
+  }
+}

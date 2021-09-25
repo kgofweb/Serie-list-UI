@@ -1,0 +1,57 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  // Header height
+  --header-height: 3.5rem;
+
+  // Color
+  --primary-color: #95A5A6;
+  --secondary-color: #FFBF00;
+  --secondary-transparent-color: #fff7dd;
+  --third-color: #E5E5E5;
+  --serie-title-color: #7F8C8D;
+  --serie-subTitle-color: #B7C1C1;
+  --field-color: #e5e5e558;
+
+  // Font size
+  --big-font: 1.5rem;
+  --nav-menu-font: 1.5rem;
+  --serie-font: .930rem;
+  --small-font: .750rem;
+}
+
+// Global
+.border-radius {
+  border-radius: 2.5px;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+%display {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-colum {
+  @extend %display;
+  justify-content: space-between;
+}
